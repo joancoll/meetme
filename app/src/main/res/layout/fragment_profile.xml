@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d92d2d"
+            android:text="Your Profile:" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/people_0000"
+                    android:contentDescription="Profile picture" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <EditText
+                    android:id="@+id/tv_profile_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your description here (max 80 caracters)"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:maxLength="80"
+                    android:lines="2"
+                    android:autoSizeMaxTextSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#d92d2d"
+                android:text="Name:" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textNoSuggestions"
+                android:id="@+id/tv_profile_name"
+                android:hint="Enter name"
+                android:maxLength="10"
+                android:autoSizeMaxTextSize="10sp"
+                android:autofillHints="name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#d92d2d"
+                android:text="Sex:" />
+            <Spinner
+                android:id="@+id/sex_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/sex_choices" />
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#d92d2d"
+                android:text="Phone:" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/tv_profile_phone"
+                android:hint="Enter phone"
+                android:maxLength="10"
+                android:autoSizeMaxTextSize="10sp"
+                android:autofillHints="phone" />
+            />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d92d2d"
+            android:text="Select Your Interests:" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/interest_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports" />
+
+            <CheckBox
+                android:id="@+id/interest_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music" />
+            <CheckBox
+                android:id="@+id/interest_movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movies" />
+
+            <CheckBox
+                android:id="@+id/interest_reading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Reading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/interest_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man" />
+
+            <CheckBox
+                android:id="@+id/interest_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woman" />
+            <CheckBox
+                android:id="@+id/interest_transgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transgender" />
+            <CheckBox
+                android:id="@+id/interest_nonbinary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-binary" />
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d92d2d"
+            android:text="Prefered distance (meters)" />
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="100 m" />
+    </LinearLayout>
+        <SeekBar
+            android:id="@+id/slider_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:max="1500"
+            android:min="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/slider_progress"
+            android:thumb="@drawable/slider_thumb"
+            android:thumbOffset="16dp"
+            android:tickMark="@null"
+            android:padding="0dp"/>
+
+
+        <Button
+            android:id="@+id/save_interests_button"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Interests" />
+    </LinearLayout>
+</ScrollView>

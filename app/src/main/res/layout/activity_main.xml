@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#eb39c1"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/molle_italic"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Meet me at the Lake" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="90">
+            <FrameLayout
+                android:id="@+id/main_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/menu_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_map"></ImageView>
+
+            <ImageView
+                android:id="@+id/menu_profile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/menu_profile" />
+
+            <ImageView
+                android:id="@+id/menu_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_available_yes" />
+
+            <TextView
+                android:id="@+id/menu_match_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/molle_italic"
+                android:text="3"
+                android:textColor="#d92d2d"
+                android:textSize="20sp">
+            </TextView>
+            <ImageView
+                android:id="@+id/menu_matches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_matches_yes">
+            </ImageView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--    MATCHES - BETTER RECYCLERVIEW USE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/molle_italic"
+                android:gravity="center"
+                android:text="YOU MATCHES!!"
+                android:textColor="#d92d2d"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#d92d2d"
+                        android:text="Name:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/tv_match1_name"
+                        android:maxLength="10"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:textSize="15sp"
+                        android:text="Lucía"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#d92d2d"
+                        android:text="Sex:" />
+                    <TextView
+                        android:id="@+id/tv_mach1_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Woman" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_profile_picture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/people_0001"
+                android:contentDescription="Profile picture" />
+            <TextView
+                android:id="@+id/tv_match1_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="80"
+                android:lines="2"
+                android:autoSizeMaxTextSize="10sp"
+                android:text="Pel·licules, llegir, música, muntanya esquí."/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d92d2d"
+                    android:text="Phone:" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_match1_phone"
+                    android:layout_marginStart="10dp"
+                    android:text="*********"
+                    android:maxLength="10"
+                    android:autoSizeMaxTextSize="10sp"/>
+                />
+            </LinearLayout>
+            <Button
+                android:id="@+id/meet_match1_button"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet match" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/molle_italic"
+            android:gravity="center"
+            android:text="~~~"
+            android:textColor="#d92d2d"
+            android:textSize="20sp" />
+
+        <!--   NEXT MATCH BETTER RECYCLERVIEW-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/molle_italic"
+                android:gravity="center"
+                android:text="YOU MATCHES!!"
+                android:textColor="#d92d2d"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#d92d2d"
+                        android:text="Name:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/tv_match2_name"
+                        android:maxLength="10"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:textSize="15sp"
+                        android:text="Rosa"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#d92d2d"
+                        android:text="Sex:" />
+                    <TextView
+                        android:id="@+id/tv_mach2_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Woman" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_profile2_picture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/people_0003"
+                android:contentDescription="Profile picture" />
+            <TextView
+                android:id="@+id/tv_mach2_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="80"
+                android:lines="2"
+                android:autoSizeMaxTextSize="10sp"
+                android:text="M'encanta la música clàssica i llegir."/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d92d2d"
+                    android:text="Phone:" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_match2_phone"
+                    android:layout_marginStart="10dp"
+                    android:text="*********"
+                    android:maxLength="10"
+                    android:autoSizeMaxTextSize="10sp"/>
+                />
+            </LinearLayout>
+            <Button
+                android:id="@+id/meet_match2_button"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet match" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/molle_italic"
+            android:gravity="center"
+            android:text="~~~"
+            android:textColor="#d92d2d"
+            android:textSize="20sp" />
+        <!--   NEXT MATCH BETTER RECYCLERVIEW-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/molle_italic"
+                android:gravity="center"
+                android:text="YOU MATCHES!!"
+                android:textColor="#d92d2d"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#d92d2d"
+                        android:text="Name:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/tv_match3_name"
+                        android:maxLength="10"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:textSize="15sp"
+                        android:text="Fatu"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#d92d2d"
+                        android:text="Sex:" />
+                    <TextView
+                        android:id="@+id/tv_mach3_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Woman" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_profile3_picture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/people_0010"
+                android:contentDescription="Profile picture" />
+            <TextView
+                android:id="@+id/tv_mach3_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="80"
+                android:lines="2"
+                android:autoSizeMaxTextSize="10sp"
+                android:text="Senderisme, música catalana i lectura."/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d92d2d"
+                    android:text="Phone:" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_match3_phone"
+                    android:layout_marginStart="10dp"
+                    android:text="*********"
+                    android:maxLength="10"
+                    android:autoSizeMaxTextSize="10sp"/>
+                />
+            </LinearLayout>
+            <Button
+                android:id="@+id/meet_match3_button"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet match" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
